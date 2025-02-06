@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Battleship - Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Mansalva&family=Margarine&family=Walter+Turncoat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+      <div class="navbar-container">
+        <h1><a href="index.html" class="navbar-title">Battleship Game</a></h1>
+        <ul class="navbar-buttons">
+          <li><a href="index.html" class="navbar-button">Home</a></li>
+          <li><a href="game.html" class="navbar-button active">Game</a></li>
+          <li><a href="rules.html" class="navbar-button">Rules</a></li>
+          <li><a href="highscores.html" class="navbar-button">High Scores</a></li>
+        </ul>
+      </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <h2>Battle</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="highscores.html">High Scores</a></li>
+      </ul>
+    </nav>
+
+    <main class="content">
+
+      <div class="timer">Elapsed Time: 02:15</div>
+      <div class="game-container">
+        <div class="player-board">
+          <h3>Your Board: </h3>
+          <div class="gameboard">
+            <div id="aircraft-carrier"></div>
+            <div id="battleship"></div>
+            <div id="submarine"></div>
+            <div id="destroyer"></div>
+    <!--        <div id="patrol-boat"></div>-->
+
+            <div class="cell hit" id="hit1"></div>
+            <div class="cell hit" id="hit2"></div>
+
+            <div class="cell cell-miss" id="miss1"></div>
+            <div class="cell cell-miss" id="miss2"></div>
+            <div class="cell cell-miss" id="miss3"></div>
+            <div class="cell cell-miss" id="miss4"></div>
+            <div class="cell cell-miss" id="miss5"></div>
+            <div class="cell cell-miss" id="miss6"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </div>
+
+        <div class="enemy-board">
+          <h3>Enemy Board: </h3>
+          <div class="gameboard">
+            <div class="cell hit" id="hit3"></div>
+            <div class="cell hit" id="hit4"></div>
+            <div class="cell hit" id="hit5"></div>
+
+            <div class="cell cell-miss" id="miss7"></div>
+            <div class="cell cell-miss" id="miss8"></div>
+            <div class="cell cell-miss" id="miss9"></div>
+            <div class="cell cell-miss" id="miss10"></div>
+            <div class="cell cell-miss" id="miss11"></div>
+            <div class="cell cell-miss" id="miss12"></div>
+            <div class="cell cell-miss" id="miss13"></div>
+            <div class="cell cell-miss" id="miss14"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div> <div class="cell"></div> <div class="cell"></div> <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+        </div>
+        <button class="restart-button">RESTART</button>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p>Game developed by<strong>Schrödinger's Cat</strong> |
+      <a href="mailto: schrödinger.cat@gmail.com">Email</a> |
+      <a href="https://github.com/schrödinger_cat"
+         target="_blank" >GitHub</a> |
+      <a href="https://linkedin.com/in/schrödinger_cat" target="_blank">LinkedIn</a>
+    </p>
+
+    <p>&copy; 2025 CatInABox Game Inc.</p>
+  </footer>
+</body>
+</html>
