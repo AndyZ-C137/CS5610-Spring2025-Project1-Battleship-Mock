@@ -1,0 +1,147 @@
+
+.timer {
+  position: sticky;
+  top: 80px;
+  font-size: 1em;
+  font-family: "Courier New", sans-serif;
+  margin: 5px 10px;
+  padding-top: 20px;
+  width: fit-content(100%);
+  text-align: end;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(10, 46px);
+  grid-template-rows: repeat(10, 46px);
+  border: 3px solid #02477e;
+}
+
+.cell {
+  width: 47px;
+  height: 47px;
+  border: 1px solid #02477e;
+  background-color: steelblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+}
+
+.cell:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.hit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightsteelblue;
+  color: darkred;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hit::before {
+  font-family: "Walter Turncoat", serif;
+  content: "O";
+  color: darkred;
+}
+
+#hit1 { grid-column: 2; grid-row: 9; }
+#hit2 { grid-column: 3; grid-row: 9; }
+#hit3 { grid-column: 9; grid-row: 5; }
+#hit4 { grid-column: 9; grid-row: 6; }
+#hit5 { grid-column: 9; grid-row: 7; }
+
+.cell-miss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: #37668e;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.cell-miss::before {
+  font-family: "Walter Turncoat", serif;
+  content: "X";
+  color: black;
+}
+
+#miss1 { grid-column: 5; grid-row: 4; }
+#miss2 { grid-column: 8; grid-row: 2; }
+#miss3 { grid-column: 2; grid-row: 6; }
+#miss4 { grid-column: 10; grid-row: 10; }
+#miss5 { grid-column: 6; grid-row: 8; }
+#miss6 { grid-column: 7; grid-row: 3; }
+#miss7 { grid-column: 2; grid-row: 7; }
+#miss8 { grid-column: 3; grid-row: 8; }
+#miss9 { grid-column: 7; grid-row: 3; }
+#miss10 { grid-column: 4; grid-row: 1; }
+#miss11 { grid-column: 6; grid-row: 8; }
+#miss12 { grid-column: 8; grid-row: 3; }
+#miss13 { grid-column: 3; grid-row: 4; }
+#miss14 { grid-column: 10; grid-row: 9; }
+
+
+/* Ships - Each ship is positioned using grid-area */
+#aircraft-carrier {
+  border: 1px solid #02477e;
+  background-color: lightsteelblue;
+  grid-area: 10 / 5 / 10 / 10; /* Row 10, spans 5 columns */
+}
+
+#battleship {
+  border: 1px solid #02477e;
+  background-color: lightsteelblue;
+  grid-area: 2 / 1 / 6 / 1; /* Column 1, spans 4 columns */
+}
+
+#submarine {
+  border: 1px solid #02477e;
+  background-color: lightsteelblue;
+  grid-area: 6 / 3 / 6 / 6; /* Row 6, spans 3 columns */
+}
+
+#destroyer {
+  border: 1px solid #02477e;
+  background-color: lightsteelblue;
+  grid-area: 6 / 10 / 9 / 10; /* Column 10, spans 3 columns */
+}
+
+/*#patrol-boat {*/
+/*  border: 1px solid #02477e;*/
+/*  background-color: lightsteelblue;*/
+/*  grid-area: 9 / 2 / 9 / 4; !* Row 9, spans 2 columns *!*/
+/*}*/
+
+.restart-button {
+  display: flex;
+  padding: 10px 5px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Caveat Brush", serif;;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 5px solid rgba(105, 105, 105, 0.8);
+  box-shadow: 0 0 10px lightgrey;
+  color: black;
+  background-color: rgba(248, 248, 248, 0.8);
+  transition: 0.3s;
+}
+
+.restart-button:hover {
+  box-shadow: 0 0 20px white;
+}

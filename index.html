@@ -1,32 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/pages/highscores.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#fafafa">
+
 </head>
 <body>
   <header>
       <div class="navbar-container">
         <h1><a href="index.html" class="navbar-title">Battleship Game</a></h1>
         <ul class="navbar-buttons">
-          <li><a href="index.html" class="navbar-button">Home</a></li>
+          <li><a href="index.html" class="navbar-button active">Home</a></li>
           <li><a href="game.html" class="navbar-button">Game</a></li>
           <li><a href="rules.html" class="navbar-button">Rules</a></li>
-          <li><a href="highscores.html" class="navbar-button active">High Scores</a></li>
+          <li><a href="highscores.html" class="navbar-button">High Scores</a></li>
         </ul>
       </div>
   </header>
 
   <div class="container">
     <nav class="sidebar">
-      <h2>Leader Board</h2>
+      <h2>Navigation</h2>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="game.html">Game</a></li>
@@ -36,32 +51,19 @@
     </nav>
 
     <main class="content">
-      <section class="content-section">
-        <h3>Daily Top Players</h3>
-        <table class="highscore-table">
-          <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Player</th>
-            <th>Score</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr><td>1</td><td>Player1</td><td>1495</td></tr>
-          <tr><td>2</td><td>Player2</td><td>1100</td></tr>
-          <tr><td>3</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>4</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>5</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>6</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>7</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>8</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>9</td><td>Player3</td><td>1050</td></tr>
-          <tr><td>10</td><td>Player3</td><td>1050</td></tr>
-          </tbody>
-        </table>
+      <section class="home-content">
+        <h2>Welcome to Battleship!</h2>
+      </section>
+      <section class="start-section">
+        <div class="border-box">
+          <img src="img/homepage_image.jpg" alt="Battleship" class="box-image">
+          <a href="game.html" class="start-button" target="_blank">START</a>
+        </div>
       </section>
     </main>
   </div>
+
+  <script src="js/app.js"></script>
 
   <footer>
     <p>Game developed by<strong>Schrödinger's Cat</strong> |
@@ -74,4 +76,5 @@
     <p>&copy; 2025 CatInABox Game Inc.</p>
   </footer>
 </body>
+
 </html>

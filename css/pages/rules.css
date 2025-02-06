@@ -1,0 +1,76 @@
+.breadcrumb {
+  box-sizing: content-box;
+  height: 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+h6 {
+  font-size: 14px;
+  color: darkgray;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.content {
+  width: 1000px;
+}
+
+.content-section {
+  scroll-margin-top: 90px;
+  margin: 10px 0 20px 0;
+  padding: 10px 20px;
+  background: #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-section:last-child {
+  margin-bottom: 10px;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-family: "Rubik", serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.content-section p {
+  padding: 0 15px;
+  line-height: 1.8;
+  font-size: 14px;
+  font-family: "Lucida Grande", sans-serif;
+}
+
+.content ul {
+  padding-left: 3rem;
+}
+
+.content li {
+  padding-left: 1rem;
+  line-height: 1.5;
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+  font-size: 105%;
+  font-style: italic;
+  color: #c6c1c1;
+}
+
+/* Show section when targeted */
+#description:target,
+#preparation:target,
+#play:target {
+  display: block;
+
+}
+.content-section:first-of-type {
+  display: block;
+}
+
+.i {
+  margin: 10px;
+  padding: 5px;
+  width: 840px;
+  height: 404px;
+}
+
