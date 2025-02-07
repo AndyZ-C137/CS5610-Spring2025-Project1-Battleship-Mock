@@ -17,6 +17,13 @@ h6 {
   position: sticky;
   top: 80px;
   height: 100vh;
+  margin: 15px 10px;
+  width: 195px;
+}
+
+.sidebar{
+  width: 195px;
+  margin: 0 0 15px 0;
 }
 
 .sidebar.rules {
