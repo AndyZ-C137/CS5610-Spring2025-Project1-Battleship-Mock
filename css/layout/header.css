@@ -1,0 +1,92 @@
+header {
+  border-bottom: 1px solid whitesmoke;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1c1c1c;
+  color: whitesmoke;
+}
+
+.navbar-container {
+  padding: 0 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  display: flex;
+  font-size: 24px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.navbar-buttons {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-buttons li{
+  margin-left: 5px;
+}
+
+.navbar-button {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: 0.5s ease;
+}
+
+.navbar-button:hover {
+  color: lightskyblue;
+  background-color: rgba(114, 145, 166, 0.22);
+}
+
+.navbar-button.active {
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .navbar-buttons{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-buttons li{
+    width: 100%;
+    margin-left: 5px;
+    text-align: left;
+  }
+
+  .navbar-button {
+    display: block;
+    padding: 12px 0;
+    text-align: center;
+    width: 100%;
+    transition: 0.3s ease;
+  }
+
+  .navbar-button:hover {
+    color: lightskyblue;
+    background-color: rgba(114, 145, 166, 0.22);
+  }
+
+  .navbar-button.active {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+
+
