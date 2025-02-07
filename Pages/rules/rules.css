@@ -11,6 +11,19 @@ h6 {
   margin: 5px 0;
 }
 
+.sidebar-container {
+  display:  flex;
+  flex-direction: column;
+  position: sticky;
+  top: 80px;
+  height: 100vh;
+}
+
+.sidebar.rules {
+  position: sticky;
+  top: 180px;
+}
+
 .content {
   width: 1000px;
 }
@@ -74,3 +87,15 @@ h6 {
   height: 404px;
 }
 
+/* Rules Page Mobile Adjustments */
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .i {
+    width: 100%;
+    height: auto;
+  }
+}

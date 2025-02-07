@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Battleship - Rules</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/pages/rules.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="rules.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -14,25 +14,37 @@
 <body>
   <header>
       <div class="navbar-container">
-        <h1><a href="index.html" class="navbar-title">Battleship Game</a></h1>
+        <h1><a href="../../index.html" class="navbar-title">Battleship Game</a></h1>
         <ul class="navbar-buttons">
-          <li><a href="index.html" class="navbar-button">Home</a></li>
-          <li><a href="game.html" class="navbar-button">Game</a></li>
+          <li><a href="../../index.html" class="navbar-button">Home</a></li>
+          <li><a href="../game/game.html" class="navbar-button">Game</a></li>
           <li><a href="rules.html" class="navbar-button active">Rules</a></li>
-          <li><a href="highscores.html" class="navbar-button">High Scores</a></li>
+          <li><a href="../highscores/highscores.html" class="navbar-button">High Scores</a></li>
         </ul>
       </div>
   </header>
 
   <div class="container">
-    <nav class="sidebar">
-      <h2>How to Play</h2>
-      <ul>
-        <li><a href="#description">Description</a></li>
-        <li><a href="#preparation">Preparation</a></li>
-        <li><a href="#play">Play</a></li>
-      </ul>
-    </nav>
+    <div class="sidebar-container">
+      <nav class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Pages/game/game.html">Game</a></li>
+          <li><a href="Pages/rules/rules.html">Rules</a></li>
+          <li><a href="Pages/highscores/highscores.html">High Scores</a></li>
+        </ul>
+      </nav>
+
+      <nav class="sidebar rules">
+        <h2>How to Play</h2>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#preparation">Preparation</a></li>
+          <li><a href="#play">Play</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <main class="content">
       <section id="description" class="content-section">
@@ -62,7 +74,7 @@
             Each player must secretly place their ships on a 10×10 grid, which represents the battlefield.
             Players also have a second, blank grid used to track their guesses about the opponent’s ships.
           </p>
-          <img src="img/Battleships1.gif" alt="Description" class="i">
+          <img src="../../img/Battleships1.gif" alt="Description" class="i">
       </section>
 
       <section id="play" class="content-section">
@@ -73,7 +85,7 @@
             (e.g., "D5"). If a ship occupies that position, the opponent announces a "hit," and the attacking
             player marks the hit on their tracking grid. The turn continues until the attacking player misses.
           </p>
-          <img src="img/Battleships2.gif" alt="Play" class="i">
+          <img src="../../img/Battleships2.gif" alt="Play" class="i">
           <p>
             The opponent then takes their turn, following the same process. The first player to successfully hit
             all occupied squares on their opponent’s board wins the game.
