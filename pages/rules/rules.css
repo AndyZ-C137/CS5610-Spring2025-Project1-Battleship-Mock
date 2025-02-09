@@ -22,16 +22,16 @@ h6 {
 }
 
 .sidebar{
-  width: 195px;
+  width: 194px;
   margin: 0 0 15px 0;
 }
 
-.sidebar.rules {
+.rules {
   position: sticky;
-  top: 180px;
+  top: 330px;
 }
 
-.content {
+.content-box {
   width: 1000px;
 }
 

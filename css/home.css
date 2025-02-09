@@ -10,32 +10,25 @@
   font-size: 22px;
 }
 
-.start-section {
-  display: flex;
-  padding:0 15px;
-  height: 100vh;
-  margin: 10px 5px 25px 0;
-  gap: 20px;
-}
-
 .border-box {
   display: flex;
+  /*height: fit-content;*/
   justify-content: center;
   align-items: center;
   border: 2px solid whitesmoke;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  padding: 10px;
+  margin: 0 0 15px 0;
 }
 
 .box-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 97.5%;
-  height: 96%;
+  height: 95%;
+  width: 98%;
   border-radius: 10px;
-  object-fit: cover;
+  object-fit: contain;
+  margin: 10px;
 }
 
 .start-button {
