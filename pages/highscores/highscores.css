@@ -2,6 +2,7 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  table-layout: fixed;
 }
 
 .highscore-table thead {
@@ -40,7 +41,6 @@
   font-size: 1.2em;
 }
 
-
 .highscore-table tbody tr:hover {
   background-color: #555;
 }
@@ -65,19 +65,12 @@
 
 /* High Scores Table - Responsive */
 @media (max-width: 768px) {
-  .highscore-table {
-    display: block;
-    overflow-x: auto;
+  .content-section {
     width: 100%;
   }
 
   .highscore-table th,
   .highscore-table td {
-    padding: 8px;
-  }
-
-  .content {
-    width: 95%;
     padding: 10px;
   }
 }

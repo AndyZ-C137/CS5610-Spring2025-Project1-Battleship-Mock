@@ -219,6 +219,7 @@ header {
 /* Sidebar Collapsible */
 @media (max-width: 768px) {
   .sidebar {
+    width: 0;
     display: none;
   }
 }
@@ -235,10 +236,20 @@ header {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
   }
 
   .content {
     width: 100%;
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 

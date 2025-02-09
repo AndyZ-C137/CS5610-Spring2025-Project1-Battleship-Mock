@@ -81,8 +81,8 @@ h6 {
 #preparation:target,
 #play:target {
   display: block;
-
 }
+
 .content-section:first-of-type {
   display: block;
 }
@@ -96,9 +96,13 @@ h6 {
 
 /* Rules Page Mobile Adjustments */
 @media (max-width: 768px) {
-  .content {
+  .sidebar-container {
+    display: none;
+  }
+
+  .content-box{
     width: 100%;
-    padding: 10px;
+    padding: 5px;
   }
 
   .i {
